@@ -1,5 +1,7 @@
 # Landing page - Theme friends
 
+I have hosted the website on https://friendslandingpage.pages.dev/.
+
 In the project directory, you can run:
 
 ### `npm start`
