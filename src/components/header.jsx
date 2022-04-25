@@ -22,49 +22,46 @@ export default function Header() {
         setAnchorEl(event.currentTarget);
     };
 
-    const animiaLogo = require('../assets/animia.png');
-
     return (
         <div>
-            <Box sx={{flexGrow: 1}} style={{position: 'relative', zIndex: '3'}}>
-                <AppBar className="zigsin-header" position="static">
+            <Box sx={{flexGrow: 1}}>
+                <AppBar className="zigsin-header" position="static" elevation={0}>
                     <Toolbar>
                         <Box sx={{display: {md: 'flex'}}}>
-                            <img src={animiaLogo} alt="Logo" height={30}/>
+                            <h3 className={"logo-text"}>😉FRIEND.finder</h3>
                         </Box>
                         <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}/>
                         <Box sx={{flexGrow: 1}}/>
-                        <Box sx={{display: {md: 'flex'}}} style={{
+                        <Box sx={{display: {md: 'flex', xs: 'none',}}} style={{
                             marginRight: "2vw"
                         }}>
                             {headerMenuList.map((item, index) => {
                                 return (
-                                    <Box sx={{display: {xs: 'none', md: "flex"}}}>
+                                    <Box sx={{display: {md: "flex"}}}>
                                         <button className='zigsin-header-button' onClick={() => {
-                                            console.log(window.location.host);
+                                            toast(item);
                                         }
-                                        }>{item}
+                                        }>
+                                            {item}
                                         </button>
                                     </Box>
                                 );
                             })}
-
-
-                            <button className='zigsin-header-more-button' onClick={
-                                handleClick
-                            }><MenuIcon/></button>
-                            <Menu
-                                keepMounted
-                                anchorEl={anchorEl}
-                                onClose={handleClose}
-                                open={Boolean(anchorEl)}
-                            >
-                                <MenuItem onClick={handleClose}>Team</MenuItem>
-                                <MenuItem onClick={handleClose}>Contacts</MenuItem>
-                                <MenuItem onClick={handleClose}>Issues</MenuItem>
-                                <MenuItem onClick={handleClose}>Info</MenuItem>
-                            </Menu>
                         </Box>
+                        <button className='zigsin-header-more-button' onClick={
+                            handleClick
+                        }><MenuIcon/></button>
+                        <Menu
+                            keepMounted
+                            anchorEl={anchorEl}
+                            onClose={handleClose}
+                            open={Boolean(anchorEl)}
+                        >
+                            <MenuItem onClick={handleClose}>Team</MenuItem>
+                            <MenuItem onClick={handleClose}>Contacts</MenuItem>
+                            <MenuItem onClick={handleClose}>Issues</MenuItem>
+                            <MenuItem onClick={handleClose}>Info</MenuItem>
+                        </Menu>
                     </Toolbar>
                 </AppBar>
             </Box>

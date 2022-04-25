@@ -1,0 +1,54 @@
+.main-div {
+    /*margin: 3vw 3vw;*/
+    padding: 0vw 5vw;
+}
+
+.main-text {
+    color: #000052;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.sub-text {
+    color: #034894;
+    margin-bottom: 4vw;
+    font-size: 1vw;
+}
+
+.get-started-div-1 {
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: #0287b6;
+    border-width: 2px;
+    border-style: solid;
+    width: 30vw;
+    height: 3vw;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.get-started-button {
+    font-size: 1.2vw;
+    height: 3vw;
+    width: 10vw;
+    border-radius: 50px;
+    background-color: #0287b6;
+    border-color: transparent;
+    color: white;
+    position: relative;
+    float: right;
+    right: 0%;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.get-started-button:hover {
+    transform: translateY(-0.2px);
+}
+
+.get-started-div-1:hover {
+    transform: translateY(-4px);
+}
+
+.friends-img{
+    width: 46vw !important;
+}
+

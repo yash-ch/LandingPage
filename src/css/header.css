@@ -1,15 +1,17 @@
 .zigsin-header {
     width: 100%;
     /* background-color: black !important; */
-    background: rgba(0, 0, 0, 1) !important;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    background: white !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 2vw;
 }
 
 .zigsin-header-button {
     position: relative;
-    color: white;
     background-color: transparent;
+    color: #000052;
+    font-weight: 600;
     margin-left: 1vw;
     padding: 5% 15% 5% 15%;
     border-color: transparent;
@@ -24,7 +26,7 @@
 .zigsin-header-more-button {
     display: none;
     position: relative;
-    color: white;
+    color: #000052;
     border-radius: 50px;
     background-color: transparent;
     padding: 5% 8%;
@@ -37,10 +39,17 @@
 @media only screen and (max-width: 768px) {
     .zigsin-header-more-button {
         display: flex;
-        background-color: rgba(0, 0, 0, 0);
+    }
+    .logo-text{
+        font-size: 4vw !important;
     }
 }
 
 .zigsin-header-more-button:hover {
     transform: translateY(-4px);
+}
+
+.logo-text{
+    color: #000052;
+    font-size: 1.3vw;
 }
