@@ -21,6 +21,7 @@
 
 .zigsin-header-button:hover {
     transform: translateY(-4px);
+    cursor: pointer;
 }
 
 .zigsin-header-more-button {
@@ -47,6 +48,7 @@
 
 .zigsin-header-more-button:hover {
     transform: translateY(-4px);
+    cursor: pointer;
 }
 
 .logo-text{

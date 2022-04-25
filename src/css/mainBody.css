@@ -36,12 +36,13 @@
     color: white;
     position: relative;
     float: right;
-    right: 0%;
+    right: 0;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .get-started-button:hover {
     transform: translateY(-0.2px);
+    cursor: pointer;
 }
 
 .get-started-div-1:hover {
