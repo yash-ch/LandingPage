@@ -41,7 +41,6 @@
 }
 
 .get-started-button:hover {
-    transform: translateY(-0.2px);
     cursor: pointer;
 }
 
